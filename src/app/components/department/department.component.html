@@ -1,0 +1,18 @@
+<div class="p-4">
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">Departamentos</h2>
+    <div *ngIf="departments.length; else noDepartments" class="bg-white shadow-md rounded-lg">
+      <ul class="divide-y divide-gray-200">
+        <li
+          *ngFor="let department of departments"
+          class="px-4 py-3 flex justify-between items-center hover:bg-gray-50 transition"
+        >
+          <span class="font-medium text-gray-800">{{ department.codigo }}</span>
+          <span class="text-gray-600">{{ department.nombre }}</span>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noDepartments>
+      <p class="text-gray-500 italic">No hay departamentos disponibles.</p>
+    </ng-template>
+  </div>
+  

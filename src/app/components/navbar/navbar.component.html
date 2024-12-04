@@ -1,0 +1,25 @@
+<nav class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-wide">
+        <a routerLink="/" class="hover:text-gray-200 transition-colors">Prueba 2 Frontend</a>
+      </div>
+      <div class="flex space-x-6">
+        <a
+          routerLink="/"
+          routerLinkActive="font-bold border-b-2 border-white"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-lg hover:text-gray-200 transition-all"
+        >
+          Home
+        </a>
+        <a
+          routerLink="/list"
+          routerLinkActive="font-bold border-b-2 border-white"
+          class="text-lg hover:text-gray-200 transition-all"
+        >
+          List
+        </a>
+      </div>
+    </div>
+  </nav>
+  
